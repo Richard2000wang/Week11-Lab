@@ -26,3 +26,11 @@ for (var i = 0; i < arraylength; i++) {
   }
 };
 
+var completelength = completedTodos.length
+
+for (var o = 0; o < completelength; o++) {
+  let {
+      todo
+  } = completedTodos[o]
+    console.log(todo);
+}
