@@ -17,3 +17,12 @@ let Prep = {
   
   let todolist = [Prep, Tools, Cook, Serve];
   let completedTodos = [];
+  
+  var arraylength = todolist.length;
+  
+  for (var i = 0; i < arraylength; i++) {
+    if (Object.values(todolist[i]).indexOf('complete') > -1) {
+        completedTodos.push(todolist[i]);
+    }
+  };
+  
